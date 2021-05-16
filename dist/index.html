@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/Index.css">
+    <script src="libs/bootstrap.min.js" defer></script>
+    <script src="script/app.js" type="module" defer></script>
+    <title>Home page</title>
+</head>
+
+<body>
+
+    <div id="main-container">
+        <!----------------------------------------------------------------------
+        activity-bar -->
+        <aside id="activitybar">
+            <div id="burger"><span class="material-icons">menu</span></div>
+            <div id="close"><span class="material-icons">close</span></div>
+            <ul id="activitybar-links">
+                <li><span class="material-icons">notifications_active</span></li>
+                <li><span class="material-icons">people</span></li>
+                <li><span class="material-icons"> groups</span></li>
+                <li><span class="material-icons"> bookmark</span></li>
+            </ul>
+        </aside>
+
+        <!----------------------------------------------------------------------
+    nav-bar -->
+        <nav id="nav">
+            <div id="logo">
+                <span id="logo-text">Coding Miracle</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#">FRINDS</a></li>
+                <li><a href="html/profile.html">PROFLIE</a></li>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">SETTINGS</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!----------------------------------------------------------------------
+    aside-left   -->
+        <aside id="aside-left">
+        </aside>
+
+
+        <!----------------------------------------------------------------------
+    aside-right   -->
+        <aside id="aside-right">
+        </aside>
+
+
+
+        <!----------------------------------------------------------------------
+    main section  -->
+        <main id="main">
+
+
+            <!----------------------------------------------------------------------
+        input-post  -->
+            <div class="post" id="post-input">
+                <div id="post-header">
+                    <div class="profile-img">
+                        <span class="material-icons">account_circle</span>
+                    </div>
+                    <textarea name="post-content" id="post-content" placeholder="What's happening?" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+
+                <div id="post-input-bottom">
+                    <div id="actions">
+                        <div class="action" id="action-photo">
+                            <span class="material-icons"> add_photo_alternate</span>
+                        </div>
+
+                        <div class="action" id="action-gif">
+                            <span class="material-icons">gif</span>
+                        </div>
+
+                        <div class="action" id="action-emoji">
+                            <span class="material-icons">sentiment_satisfied_alt</span>
+                        </div>
+                    </div>
+                    <div id="action-submit"><button>POST</button></div>
+                </div>
+
+            </div>
+
+            <div id="post-list">
+
+                <!----------------------------------------------------------------------
+        output-post  -->
+                <div class="post post-output hide">
+                    <div class="post-header">
+                        <div class="profile-img">
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+                        </div>
+
+                        <div class="post-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus id semper enim.
+                                Morbi nec felis vitae enim molestie sagittis id eu sem.
+                                Nulla nibh quam, commodo ac arcu a, dictum rutrum nunc.
+                                Etiam eget libero semper, feugiat sem quis, interdum libero.
+                            </p>
+                        </div>
+                        <div class="post-actions">
+                            <span class="material-icons target">
+                                more_vert
+                            </span>
+                            <ul class="actions-menu hide">
+                                <li><span class="save">save</span></li>
+                                <li><span class="edit">edit</span></li>
+                                <li><span class="delete">delete</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="line">
+                        <hr>
+                    </div>
+
+                    <div class="post-output-bottom">
+                        <div class="actions">
+                            <div class="action action-favorite">
+                                <span class="material-icons">
+                                    favorite_border
+                                </span>
+                            </div>
+
+                            <div class="action action-comment">
+                                <span class="material-icons">
+                                    comment
+                                </span>
+                            </div>
+
+                            <div class="action action-share">
+                                <span class="material-icons">
+                                    share
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post-output-comment hide">
+                        <div class="comment-input">
+                            <span class="material-icons">
+                                send
+                            </span>
+                            <input type="text" placeholder="write your comment here ...">
+                        </div>
+                        <div class="comment-output hide">
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.6.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+@use  'base';
+
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background-color: base.$gray;
+    font-weight: bold;
+    color: base.$text-hell;
+    text-align: center;
+
+    #logo{
+
+        background-color: base.$main-green;
+        padding: 10px;
+        height: 60px;
+        flex-grow: 2;
+        span{
+            font-size: 1.5rem;
+        }
+    }
+
+
+    ul{
+        flex-basis: auto;
+        flex-grow: 10;
+        display: flex;
+        list-style: none;
+        li{
+            flex-grow: 1;
+             a {
+                 margin:0 5px;
+                 width: 100%;
+                 box-shadow: 10px;
+                 text-decoration: none;
+                 display: inline-block;
+                 padding: 20px;
+                 height: 60px;
+                 color: base.$text-hell;
+
+             }
+
+             a:hover {
+                 background-color: base.$main-green-hell;
+             }
+
+             .active {
+                 background-color: base.$main-green;
+             }
+        }
+
+    }
+}
+
+

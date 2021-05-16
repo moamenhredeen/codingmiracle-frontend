@@ -1,0 +1,18 @@
+/* colors */
+/* ==================general================================ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Monda", sans-serif;
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+::selection {
+  background: #69971E66;
+}

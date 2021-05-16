@@ -1,0 +1,66 @@
+/* colors */
+/* ==================general================================ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Monda", sans-serif;
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+::selection {
+  background: #69971E66;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+nav #logo {
+  background-color: #69971E;
+  padding: 10px;
+  height: 60px;
+  flex-grow: 2;
+}
+nav #logo span {
+  font-size: 1.5rem;
+}
+nav ul {
+  flex-basis: auto;
+  flex-grow: 10;
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  flex-grow: 1;
+}
+nav ul li a {
+  margin: 0 5px;
+  width: 100%;
+  box-shadow: 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  height: 60px;
+  color: #ffffff;
+}
+nav ul li a:hover {
+  background-color: #69971E66;
+}
+nav ul li .active {
+  background-color: #69971E;
+}
